@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OpenCartApplicationMasterSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="OpenCart_V121_Test(failed)" verbose="0">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest">
+        <methods>
+          <include name="verify_Account_Reg"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
+      <class name="testCases.TC_002_VerifyLogin">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verify_Login"/>
+        </methods>
+      </class> <!-- testCases.TC_002_VerifyLogin -->
+    </classes>
+  </test> <!-- OpenCart_V121_Test(failed) -->
+</suite> <!-- Failed suite [OpenCartApplicationMasterSuite] -->
